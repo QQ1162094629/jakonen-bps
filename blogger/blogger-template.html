@@ -1,7 +1,8 @@
-<html xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b'>
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
     <head>
         <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
-      <link href="https://fonts.googleapis.com/css?family=Muli|Work+Sans" rel="stylesheet"/>
+      <link href='https://fonts.googleapis.com/css?family=Muli|Work+Sans' rel='stylesheet'/>
         <b:if cond='data:blog.isMobile'> 
             <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/> 
             <b:else/> 
@@ -9,8 +10,8 @@
         </b:if> 
         <b:include data='blog' name='all-head-content'/>
         <title>JAKONEN.ORG</title>
-        <b:skin>
-           <![CDATA[/* 
+        <b:skin><![CDATA[
+           /* 
             body { 
              font: ; 
              color: #000; 
@@ -18,8 +19,8 @@
              padding: 0; 
              margin: 0; 
             }
-           ]]>
-        </b:skin>
+           
+        ]]></b:skin>
         <style>
             body {
                 margin:0;
@@ -30,6 +31,59 @@
                 color:#000;
                 text-decoration: none;
             }
+			.post-title, .entry-title {
+				text-align:center;
+				font-size:30;
+				color:#333333;
+				width:100%;
+				border-bottom:1px #779ecb solid;
+         	}
+			.post-title, .entry-title a {
+				color:#333333;
+         	}
+			h2 {
+				color:#779ecb;
+				font-size:25;
+         	}
+			h3 {
+				color:#365e8d;
+				font-size:20;
+         	}
+			h4 {
+				color:#365e8d;
+				font-size:15;
+				margin:0;
+				padding:10;
+				font-weight:100;
+				width:auto;
+				border-bottom:1px #9ABCE3 solid;
+         	}
+			i {
+				width:80%;
+				height:auto;
+				padding:10;
+				background:#eee;
+				border-right:5px #333333 solid;
+				margin:20;
+				text-align:center;
+          	}
+			b {
+				color:#254973;
+				font-weight:100;
+          	}
+			hr {
+				border:0;
+				height:1;
+				width:100%;
+				background:#9ABCE3;
+          	}
+			tr, th {
+				font-weight:100;
+				font-size:15;
+				color:#3D5775;
+				border:1px #CFDAE8 dotted;
+				padding:5;
+          	}
             #content-wrapper {
                 width:850;
                 height:325;
@@ -53,7 +107,7 @@
             #logo-text {
                 color:#F7F7F7;
                 float:left;
-                font-family: 'Muli', sans-serif;
+                font-family: &#39;Muli&#39;, sans-serif;
                 font-weight:bold;
                 font-size:32;
                 padding:19;
@@ -206,54 +260,54 @@
         </style>
     </head>
     <body>
-        <div id="content-wrapper">
-            <div id="top-bar">
-                <div id="logo-text">
-                    <a href="http://jakonen.org">
+        <div id='content-wrapper'>
+            <div id='top-bar'>
+                <div id='logo-text'>
+                    <a href='http://jakonen.org'>
                         JAKONEN.ORG
                     </a>
                 </div>
-                <div id="menu-items">
-                    <div id="links">
-                        <a target="newTab" href="">PORTFOLIO</a>
-                        <a target="newTab" href="http://s4mi.xyz/">S4MI.XYZ</a>
-                        <a target="newTab" href="https://www.youtube.com/channel/UCGnhXSggbmEGsUWMaTN0xFw">YOUTUBE</a>
-                        <a target="newTab" href="https://discord.gg/dpjTe9x">DISCORD</a>
-                        <a target="newTab" href="https://github.com/samixyz">GITHUB</a>
-                        <a target="newTab" href="http://steamcommunity.com/id/s4mixyz">STEAM</a>
+                <div id='menu-items'>
+                    <div id='links'>
+                        <a href='' target='newTab'>PORTFOLIO</a>
+                        <a href='http://s4mi.xyz/' target='newTab'>S4MI.XYZ</a>
+                        <a href='https://www.youtube.com/channel/UCGnhXSggbmEGsUWMaTN0xFw' target='newTab'>YOUTUBE</a>
+                        <a href='https://discord.gg/dpjTe9x' target='newTab'>DISCORD</a>
+                        <a href='https://github.com/samixyz' target='newTab'>GITHUB</a>
+                        <a href='http://steamcommunity.com/id/s4mixyz' target='newTab'>STEAM</a>
                     </div>
                 </div>
-                <div id="top-image">
-                    <a target="newTab" href="http://s4mi.xyz/">
-                        <img src="https://raw.githubusercontent.com/jakonen/jakonen-backup-repo/master/tCQim5R.png"/>
+                <div id='top-image'>
+                    <a href='http://s4mi.xyz/' target='newTab'>
+                        <img src='https://raw.githubusercontent.com/jakonen/jakonen-backup-repo/master/tCQim5R.png'/>
                     </a>
                 </div>
             </div>
-            <div id="post-manager">
+            <div id='post-manager'>
                 <b:section class='main' id='main' showaddelement='yes'>
-      <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
-        <b:widget-settings>
-          <b:widget-setting name='showDateHeader'>false</b:widget-setting>
-          <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-          <b:widget-setting name='showShareButtons'>false</b:widget-setting>
-          <b:widget-setting name='showCommentLink'>false</b:widget-setting>
-          <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
-          <b:widget-setting name='showAuthor'>false</b:widget-setting>
-          <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
-          <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-          <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-          <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
-          <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-          <b:widget-setting name='showLabels'>false</b:widget-setting>
-          <b:widget-setting name='showLocation'>false</b:widget-setting>
-          <b:widget-setting name='showTimestamp'>false</b:widget-setting>
-          <b:widget-setting name='postsPerAd'>1</b:widget-setting>
-          <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-          <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-          <b:widget-setting name='showInlineAds'>false</b:widget-setting>
-          <b:widget-setting name='showReactions'>false</b:widget-setting>
-        </b:widget-settings>
-        <b:includable id='main' var='top'>
+                  <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
+                    <b:widget-settings>
+                      <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+                      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+                      <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+                      <b:widget-setting name='showCommentLink'>false</b:widget-setting>
+                      <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+                      <b:widget-setting name='showAuthor'>false</b:widget-setting>
+                      <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+                      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+                      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                      <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+                      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                      <b:widget-setting name='showLabels'>false</b:widget-setting>
+                      <b:widget-setting name='showLocation'>false</b:widget-setting>
+                      <b:widget-setting name='showTimestamp'>false</b:widget-setting>
+                      <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+                      <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+                      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+                      <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+                      <b:widget-setting name='showReactions'>false</b:widget-setting>
+                    </b:widget-settings>
+                    <b:includable id='main' var='top'>
   <b:if cond='!data:mobile'>
     <!-- posts -->
     <div class='blog-posts hfeed'>
@@ -302,14 +356,14 @@
 
   <b:include cond='data:top.showPlusOne' name='googlePlusBootstrap'/>
 </b:includable>
-        <b:includable id='backlinkDeleteIcon' var='backlink'>
+                    <b:includable id='backlinkDeleteIcon' var='backlink'>
   <span expr:class='&quot;item-control &quot; + data:backlink.adminClass'>
     <a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'>
       <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
     </a>
   </span>
 </b:includable>
-        <b:includable id='backlinks' var='post'>
+                    <b:includable id='backlinks' var='post'>
   <a name='links'/><h4><data:post.backlinksLabel/></h4>
   <b:if cond='data:post.numBacklinks != 0'>
     <dl class='comments-block' id='comments-block'>
@@ -335,7 +389,7 @@
     <a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &quot;_backlinks-create-link&quot;' target='_blank'><data:post.createLinkLabel/></a>
   </p>
 </b:includable>
-        <b:includable id='comment-form' var='post'>
+                    <b:includable id='comment-form' var='post'>
   <div class='comment-form'>
     <a name='comment-form'/>
     <b:if cond='data:mobile'>
@@ -358,7 +412,7 @@
     </script>
   </div>
 </b:includable>
-        <b:includable id='commentDeleteIcon' var='comment'>
+                    <b:includable id='commentDeleteIcon' var='comment'>
   <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
     <b:if cond='data:showCmtPopup'>
       <div class='goog-toggle-button'>
@@ -371,7 +425,7 @@
     </b:if>
   </span>
 </b:includable>
-        <b:includable id='comment_count_picker' var='post'>
+                    <b:includable id='comment_count_picker' var='post'>
   <b:if cond='data:post.commentSource == 1'>
     <span class='cmt_count_iframe_holder' expr:data-count='data:post.numComments' expr:data-onclick='data:post.addCommentOnclick' expr:data-post-url='data:post.url' expr:data-url='data:post.url.canonical.http'>
     </span>
@@ -381,7 +435,7 @@
     </a>
   </b:if>
 </b:includable>
-        <b:includable id='comment_picker' var='post'>
+                    <b:includable id='comment_picker' var='post'>
   <b:if cond='data:post.commentSource == 1'>
     <b:include data='post' name='iframe_comments'/>
   <b:elseif cond='data:post.showThreadedComments'/>
@@ -390,7 +444,7 @@
     <b:include data='post' name='comments'/>
   </b:if>
 </b:includable>
-        <b:includable id='comments' var='post'>
+                    <b:includable id='comments' var='post'>
   <div class='comments' id='comments'>
     <a name='comments'/>
     <b:if cond='data:post.allowComments'>
@@ -501,7 +555,7 @@
     </div>
   </div>
 </b:includable>
-        <b:includable id='feedLinks'>
+                    <b:includable id='feedLinks'>
   <b:if cond='data:blog.pageType != &quot;item&quot;'> <!-- Blog feed links -->
     <b:if cond='data:feedLinks'>
       <div class='blog-feeds'>
@@ -517,7 +571,7 @@
     </div>
   </b:if>
 </b:includable>
-        <b:includable id='feedLinksBody' var='links'>
+                    <b:includable id='feedLinksBody' var='links'>
   <div class='feed-links'>
   <data:feedLinksMsg/>
   <b:loop values='data:links' var='f'>
@@ -525,7 +579,7 @@
   </b:loop>
   </div>
 </b:includable>
-        <b:includable id='iframe_comments' var='post'>
+                    <b:includable id='iframe_comments' var='post'>
 
   <b:if cond='data:post.allowIframeComments'>
     <script expr:src='data:post.iframeCommentSrc' type='text/javascript'/>
@@ -536,7 +590,7 @@
     </b:if>
   </b:if>
 </b:includable>
-        <b:includable id='mobile-index-post' var='post'>
+                    <b:includable id='mobile-index-post' var='post'>
   <div class='mobile-date-outer date-outer'>
     <b:if cond='data:post.dateHeader'>
       <div class='date-header'>
@@ -575,7 +629,7 @@
     </div>
   </div>
 </b:includable>
-        <b:includable id='mobile-main' var='top'>
+                    <b:includable id='mobile-main' var='top'>
     <!-- posts -->
     <div class='blog-posts hfeed'>
 
@@ -594,7 +648,7 @@
 
    <b:include name='mobile-nextprev'/>
 </b:includable>
-        <b:includable id='mobile-nextprev'>
+                    <b:includable id='mobile-nextprev'>
   <div class='blog-pager' id='blog-pager'>
     <b:if cond='data:newerPageUrl'>
       <div class='mobile-link-button' id='blog-pager-newer-link'>
@@ -619,7 +673,7 @@
   </div>
   <div class='clear'/>
 </b:includable>
-        <b:includable id='mobile-post' var='post'>
+                    <b:includable id='mobile-post' var='post'>
   <div class='date-outer'>
     <b:if cond='data:post.dateHeader'>
       <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
@@ -709,7 +763,7 @@
     </div>
   </div>
 </b:includable>
-        <b:includable id='nextprev'>
+                    <b:includable id='nextprev'>
   <div class='blog-pager' id='blog-pager'>
     <b:if cond='data:newerPageUrl'>
       <span id='blog-pager-newer-link'>
@@ -734,7 +788,7 @@
   </div>
   <div class='clear'/>
 </b:includable>
-        <b:includable id='post' var='post'>
+                    <b:includable id='post' var='post'>
   <div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
     <b:if cond='data:post.firstImageUrl'>
       <meta expr:content='data:post.firstImageUrl' itemprop='image_url'/>
@@ -877,7 +931,7 @@
     </div>
   </div>
 </b:includable>
-        <b:includable id='postQuickEdit' var='post'>
+                    <b:includable id='postQuickEdit' var='post'>
   <b:if cond='data:post.editUrl'>
     <span expr:class='&quot;item-control &quot; + data:post.adminClass'>
       <a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'>
@@ -886,10 +940,10 @@
     </span>
   </b:if>
 </b:includable>
-        <b:includable id='shareButtons' var='post'>
+                    <b:includable id='shareButtons' var='post'>
   <b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'><span class='share-button-link-text'><data:top.emailThisMsg/></span></a></b:if><b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'><span class='share-button-link-text'><data:top.blogThisMsg/></span></a></b:if><b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></a></b:if><b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></a></b:if><b:if cond='data:top.showPinterestButton'><a class='goog-inline-block share-button sb-pinterest' expr:href='data:post.sharePostUrl + &quot;&amp;target=pinterest&quot;' expr:title='data:top.shareToPinterestMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToPinterestMsg/></span></a></b:if><b:if cond='data:top.showPlusOne'><div class='goog-inline-block google-plus-share-container'><data:post.googlePlusShareTag/></div></b:if>
 </b:includable>
-        <b:includable id='status-message'>
+                    <b:includable id='status-message'>
   <b:if cond='data:navMessage'>
   <div class='status-msg-wrap'>
     <div class='status-msg-body'>
@@ -904,7 +958,7 @@
   <div style='clear: both;'/>
   </b:if>
 </b:includable>
-        <b:includable id='threaded-comment-form' var='post'>
+                    <b:includable id='threaded-comment-form' var='post'>
   <div class='comment-form'>
     <a name='comment-form'/>
     <b:if cond='data:mobile'>
@@ -924,7 +978,7 @@
     </script>
   </div>
 </b:includable>
-        <b:includable id='threaded_comment_js' var='post'>
+                    <b:includable id='threaded_comment_js' var='post'>
   <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
 
   <script type='text/javascript'>
@@ -1106,7 +1160,7 @@
 // ]]>
   </script>
 </b:includable>
-        <b:includable id='threaded_comments' var='post'>
+                    <b:includable id='threaded_comments' var='post'>
   <div class='comments' id='comments'>
     <a name='comments'/>
     <h4><data:post.commentLabelFull/>:</h4>
@@ -1140,12 +1194,12 @@
     </div>
   </div>
 </b:includable>
-      </b:widget>
-    </b:section>
+                  </b:widget>
+                </b:section>
             </div>
-    <div id="footer"><p>Free open source theme by Sami Jakonen - Projects may have different lisences.</p></div>
+    <div id='footer'><p>Free open source theme by Sami Jakonen - Projects may have different lisences.</p></div>
         </div>
-        <script src="https://use.fontawesome.com/7d9ca009e7.js"></script>
-		<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML"></script>
+        <script src='https://use.fontawesome.com/7d9ca009e7.js'/>
+		<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML'/>
     </body>
 </html>
